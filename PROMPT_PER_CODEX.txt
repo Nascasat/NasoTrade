@@ -1,0 +1,29 @@
+Sei Codex e devi lavorare sul repository GitHub Nascasat/NasoTrade.
+
+OBIETTIVO
+Preparare una prima versione Android compilabile di NasoTrade e fare in modo che GitHub Actions produca automaticamente un APK Debug.
+
+VINCOLI
+1. Usa Java, non Kotlin, per la prima versione.
+2. JDK 17.
+3. Android SDK 35.
+4. Gradle 8.7.
+5. Non usare API key, password o credenziali Coinbase.
+6. Non implementare ancora trading reale.
+7. L'app deve compilare senza errori.
+8. Mantieni il progetto semplice e facilmente estendibile.
+
+COSA FARE
+- Crea/aggiorna il progetto Android contenuto nel pacchetto.
+- Package name: com.nasotrade.app
+- Activity principale: MainActivity.
+- Interfaccia iniziale semplice con titolo NasoTrade e stato "Pronto".
+- Aggiungi una struttura pulita per poter implementare successivamente dati di mercato, autenticazione e Coinbase.
+- Mantieni minSdk 24 e target/compile SDK 35.
+- Aggiungi GitHub Actions in .github/workflows/android.yml.
+- La workflow deve usare JDK 17, installare Android SDK 35 se necessario, eseguire assembleDebug e caricare app-debug.apk come artifact.
+- Non modificare il repository con credenziali segrete.
+- Al termine verifica che il progetto sia compilabile.
+
+IMPORTANTE
+Non limitarti a spiegare cosa fare: modifica realmente i file del repository e prepara la build.
